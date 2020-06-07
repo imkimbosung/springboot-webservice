@@ -3,6 +3,7 @@ package org.example.service.springboot.domain.posts;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.example.service.springboot.domain.BaseTimeEntity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -13,7 +14,7 @@ import javax.persistence.Id;
 @Getter
 @NoArgsConstructor
 @Entity   // 테이블과 링크될 클스라는 표기
-public class Posts {
+public class Posts extends BaseTimeEntity {
 
     @Id // 해당 필드의 PK값을 표시
     @GeneratedValue(strategy = GenerationType.IDENTITY)  // 스프링 생성 규칙
