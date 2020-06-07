@@ -1,4 +1,4 @@
-package org.example.service.springboot;
+package org.example.service.springboot.web;
 
 import org.example.service.springboot.web.HelloController;
 import org.junit.Test;
